@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstaSocial</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>InstaSocial 📸</h1>
+        <button id="btnSair" class="escondido">Sair</button>
+    </header>
+
+    <main>
+
+        <!-- CADASTRO -->
+        <section id="cadastro" class="tela">
+            <div class="card">
+                <h2>Crie sua conta</h2>
+                <p>Faça parte da nossa comunidade!</p>
+
+                <form id="formCadastro">
+                    <input type="text" id="nome" placeholder="Nome completo" required>
+                    <input type="text" id="username" placeholder="Nome de usuário" required>
+                    <input type="email" id="emailCadastro" placeholder="E-mail" required>
+                    <input type="password" id="senhaCadastro" placeholder="Senha" required>
+                    <button type="submit">Cadastrar</button>
+                </form>
+
+                <p>Já tem uma conta?
+                    <a href="#" id="irLogin">Faça login</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- LOGIN -->
+        <section id="login" class="tela escondido">
+            <div class="card">
+                <h2>Bem-vindo de volta!</h2>
+                <p>Entre na sua conta.</p>
+
+                <form id="formLogin">
+                    <input type="text" id="identificador" placeholder="Usuário ou e-mail" required>
+                    <input type="password" id="senhaLogin" placeholder="Senha" required>
+                    <button type="submit">Entrar</button>
+                </form>
+
+                <p>Ainda não tem conta?
+                    <a href="#" id="irCadastro">Cadastre-se</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- FEED -->
+        <section id="feed" class="tela escondido">
+
+            <div class="card">
+                <h2>O que está acontecendo?</h2>
+
+                <form id="formPublicacao">
+                    <textarea id="legenda" placeholder="Escreva sua publicação..." required></textarea>
+
+                    <input type="text" id="imagemUrl" placeholder="URL da imagem (opcional)">
+
+                    <button type="submit">Publicar</button>
+                </form>
+            </div>
+
+            <h2 class="tituloFeed">Feed de publicações</h2>
+
+            <div id="listaPublicacoes">
+                <p>Carregando publicações...</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>InstaSocial © 2026 - Compartilhe seus momentos!</p>
+    </footer>
+
+</body>
+</html>
